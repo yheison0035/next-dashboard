@@ -6,9 +6,9 @@ module.exports = {
         es6: true
     },
     extends: [
-        "eslint: recommended",
-        "plugin: jsc-a11y/recommended",
-        "plugin: prettier/recommended",
+        "eslint:recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended",
         "next",
         "next/core-web-vitals"
     ],

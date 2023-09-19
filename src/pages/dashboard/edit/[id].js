@@ -9,7 +9,7 @@ export default function Edit() {
   const router = useRouter();
 
   useEffect(() => {
-    const {id} = router.query;
+    const { id } = router.query;
 
     if (!router.isReady) return;
 
@@ -18,8 +18,7 @@ export default function Edit() {
       setProduct(response.data);
     }
 
-    getProduct().catch((error) =>router.push('/notFound'));
-
+    getProduct().catch((error) => router.push('/notFound'));
   }, [router?.isReady]);
 
   return <FormProduct product={product} />;
