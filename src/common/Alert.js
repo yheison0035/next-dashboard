@@ -13,7 +13,7 @@ const Alert = ({ alert, handleClose }) => {
   return (
     <>
       {alert?.active && (
-        <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)" className={`bg-${bgColor} p-5 w-full rounded mb-8`}>
+        <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)" className={`bg-${bgColor} p-4 w-full rounded mb-8`}>
           <div className="flex space-x-3">
             <div className={`flex-1 leading-tight text-sm ${textColor} font-medium`}>{alert.message}</div>
             <button type="button">
